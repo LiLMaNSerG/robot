@@ -85,14 +85,14 @@ command.mainloop()
 def check_front():
     dist = distance()
     if dist < 12:
-        ptint("Too close, ", dist)
+        print("Too close, ", dist)
         reverse(2)
         dist = distance()
         if dist < 12:
-            ptint("Too close, ", dist)
+            print("Too close, ", dist)
             pivot_left(2)
             if dist < 12:
-                ptint("Too close, giving up", dist)
+                print("Too close, giving up", dist)
                 sys.exit()
 
 def autonomy():
